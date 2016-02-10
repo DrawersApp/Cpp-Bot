@@ -65,8 +65,11 @@ ostream& operator<<(ostream& os, const Message& stanza) {
 void Bot::handleMessage( const Message& stanza, MessageSession* session ) {
 
     if (stanza.body().length()) {
-        cout << "Received message: " << stanza << endl;
-        Message msg(Message::Chat, stanza.from(), "Bot Says: " + stanza.body());
+        // cout << "Received message: " << stanza << endl;
+        string incommingMessageString = stanza.body();
+        string outgoingMessageString =  "Bot Says: " + stanza.body();
+
+        Message msg(Message::Chat, stanza.from(), outgoingMessageString);
 
         std::stringstream ss;
         // convert it to mills
