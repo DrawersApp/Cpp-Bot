@@ -4,32 +4,16 @@
 
 C++ echo bot built with gloox - [Gloox tutorial] (http://blog.knatten.org/2012/03/23/basic-gloox-tutorial/)
 #On ubuntu:
-
-`sudo apt-get install libgloox-dev`
-
-`make`
-
-`./bot`
-
+./setup_linux.sh
 
 #On Mac
-Download gloox tar from [link](http://camaya.net/download/gloox-1.0.14.tar.bz2)
+./setup_mac.sh
 
-`tar -xzvf gloox-1.0.14.tar.bz2`
+HOW TO RUN:
 
-`cd gloox-1.0.14`
 
-`./configure`
-
-`make`
-
-`make install`
-
-Clone this repo and run
-
-`make`
-
-`./bot`
-
+# Some useful third party libraries
+1. [Rapid Json](https://github.com/miloyip/rapidjson/)
+2. [Rest Client](https://github.com/mrtazz/restclient-cpp/)
 
 To get jid and password, mailto: harshit.bangar@gmail.com
