@@ -13,6 +13,7 @@ Bot::Bot() {
     string username = "REPLACE_ME";
     string password = "REPLACE_ME";
 
+    username += "@ejabberd.sandwitch.in";
     JID jid(username);
     client = new Client( jid, password );
     connListener = new ConnListener();
